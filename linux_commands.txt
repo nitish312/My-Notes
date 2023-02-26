@@ -1,0 +1,88 @@
+1) pwd
+-> current working directory
+
+2) ls
+-> list all files in current directory
+
+3) ls -a
+-> list all files including hidden files
+
+4) ls -l 	OR 	ls -al
+-> display more information about files
+
+	(ls -R 	-> list all folders with its sub-folders)
+
+5) cd foldername/
+-> change directory
+
+	(eg: cd ..       -> go back, 	. means current directory and .. means previous directory)
+	(cd ../foldername 	-> go back to another folder of previous directory )
+
+6) cat filename.extention
+-> opens a file / displays file content
+
+	(cat > filename.ext 		-> created new file if file not exists and inserts content in it)
+	(cat file1 file2 > file3		-> copies file1 & file2 into file3)
+	(left > right 	-> symbols copies left part into right part)
+
+7) mkdir newfoldername
+-> creates new directory/folder
+
+8) touch filename.extension
+-> creates new file
+
+9) cp source destination
+-> copies source file/folder to destination file/folder
+
+10) mv source destination
+-> moves source file/folder to destination folder
+
+	(mv file1 file2	-> rename current file/folder to new file/folder)
+
+11) rm filename.ext 		-> permanently deletes file
+12) rm -R foldername	-> permanently deletes folder
+	(rm -rf 	-> force delete sometimes file is opened, used somewhere)
+
+13) head file.ext
+-> displays first 10 lines in file
+	(head -n 5 file.ext	-> displays first 5 lines)
+
+14) tail file.ext
+-> displays last 10 lines in file
+	(tail -n 5 file.ext	-> displays last 5 lines)
+
+15) diff file1.ext file2.ext
+-> displays lines from both files which are not common
+
+16) locate filename.extension 	-> to locate file in directory
+	(locate "*.txt"	-> it locates all files with extension .txt)
+
+17) find filename.ext 	-> searches file
+	(we can also find in previous directory using ..)
+	(find . -type d 	-> searches folders not files)
+	(find . -type f 	-> searches files not folders)
+
+18) find the files and perform actions on all of them 
+-> eg. find . -type f -name "*.txt" -exec rm -rf {} + 
+
+19) grep "text" filename.ext 	-> searches given text in the given file
+-> allows us to search some text within our files in our system (case-sensitive)
+	(grep -i "text" file 	-> case-insensitive search)
+	(grep -win "text" ./*.txt 	-> searches in all files in current directory)
+
+terminal shortcuts : 
+ctrl + A 	-> moves to start of typed command
+ctrl + E 	-> moves to end of typed command
+ctrl + K 	-> removes everything after cursor pointer
+multiple commands in one line 		-> separated by ;
+
+20) sort file.ext 	-> ascending sort rows
+	(sort -r file.ext 	-> descending sort)
+	(sort -n file.ext	-> for numerical)
+
+21) hostname 	-> displays hostname of system
+
+22) cut -c 1-3 file.ext
+-> prints first 3 letters of each row in given file
+
+
