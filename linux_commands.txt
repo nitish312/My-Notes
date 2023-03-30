@@ -1,5 +1,5 @@
 1) pwd
--> current working directory
+-> current working directory 
 
 2) ls
 -> list all files in current directory
