@@ -1,0 +1,122 @@
+Install mongodb community server link 
+==> https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+
+*Most commonly used commands : 
+
+1) start mongo db server 
+-> systemctl start mongodb
+
+2) check status of mongo db server 
+-> systemctl status mongodb
+
+3) stop mongo db server 
+-> systemctl stop mongodb
+
+4) open mongo shell
+-> mongo
+
+5) view all databases
+-> show dbs
+
+6) create or change the database
+-> use database_name
+
+7) check our current database
+-> db
+
+8) drop the database by going into it
+-> db.dropDatabase() 
+
+9) show all collections
+-> show collections
+
+10) create new collection
+-> db.createCollection('collection_name')
+
+11) drop the collection
+-> db.collection_name.drop()
+
+12) insert a single row in collection
+-> 
+
+db.collection_name.insert({
+'name':'beast',
+'sal':100000,
+'age':21
+})
+
+
+13) insert many rows in collection
+->
+
+db.collection_name.insert([
+{
+'name':'tom',
+'animal':'cat'
+},
+{
+'name':'jerry',
+'animal':'mouse'
+},
+{
+'name':'bob',
+'animal':'dog'
+}
+])
+
+14) delete row
+-> db.collection_name.remove({key:value})
+
+15) display all rows
+-> 
+db.collection_name.find()
+db.collection_name.find().pretty()
+
+16) find any row
+-> db.collection_name.find({key:value})
+
+17) count of output rows
+-> db.collection_name.find().count()
+
+18) limit the output rows
+-> db.collection_name.find().limit(3)
+
+
+19) update the row
+-> *update(searchFilter, updatingObjects, upsert says if not found insert it)
+
+db.collection_name.update(
+{name:'nitish'},
+{$set: 
+{sal:200000}
+}, 
+{upsert:true}
+)
+
+
+20) sort based on field (1 = ascending, 2 = descending)
+-> db.collection_name.find().sort({sal:1})
+
+21) increment/decrement operator
+-> 
+db.collection_name.update({name: 'pluto'},
+{$inc:{age: 1}}
+)
+
+22) rename operator
+->
+db.collection_name.update({name: 'Rohan'},
+{$rename:{
+    name: 'firstName'
+}})
+
+23) <, <=, >, >=
+-> 
+(less than - $lt, 
+greater than - $gt,
+less than or equal to - $lte,
+greater than or equal to - $gte)
+
+db.collection_name.find({salary: {$lt: 30000}})
+
+
