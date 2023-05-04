@@ -1,7 +1,7 @@
 Install mongodb community server link 
 ==> https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 
-*Most commonly used commands : 
+*Most commonly used commands :  
 
 1) start mongo db server 
 -> systemctl start mongodb
