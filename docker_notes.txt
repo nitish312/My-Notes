@@ -1,0 +1,13 @@
+Docker 
+- Docker is an open platform for developing, shipping and running applications.
+- It packages an application and all its dependencies together in the form of containers.
+
+Dockerfile 
+- It is a text document which contains all the commands that a user can call on the command line to assemble an image.
+
+Docker image
+- Its a template to create a container
+
+Docker container
+- The running instance of the docker image.
+- Containers hold entire package to run application.
