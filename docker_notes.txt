@@ -11,3 +11,35 @@ Docker image
 Docker container
 - The running instance of the docker image.
 - Containers hold entire package to run application.
+
+Important Docker Commands : 
+
+1) check the docker version
+-> 	docker -v
+	docker --version
+	
+2) pull the image
+-> 	docker pull <imageName>
+
+3) check all the images
+-> 	docker images
+
+4) run the image/container
+-> 	docker run <imageName>
+
+5) get all the information of image / same description from docker hub
+-> 	docker search <imageName>
+
+6) show all running containers
+-> 	docker ps
+
+7) show all containers including stopped
+-> 	docker ps -a
+
+8) keep running docker container/image 
+-> 	docker run -it -d <containerName>
+
+9) use the running container
+-> 	docker exec -it <containerID> <containerName>
+
+
